@@ -7,11 +7,11 @@ import { initializeApp } from 'firebase/app';
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: 'mern-blog-b327f.firebaseapp.com',
-  projectId: 'mern-blog-b327f',
-  storageBucket: 'mern-blog-b327f.appspot.com',
-  messagingSenderId: '699397991367',
-  appId: '1:699397991367:web:88ff565ef72a182d6b87e2',
+  authDomain: "nisha-blog.firebaseapp.com",
+  projectId: "nisha-blog",
+  storageBucket: "nisha-blog.appspot.com",
+  messagingSenderId: "126521182237",
+  appId: "1:126521182237:web:d47119e67f5d96191b1ef4"
 };
 
 // Initialize Firebase

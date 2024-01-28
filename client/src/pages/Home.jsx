@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import CallToAction from '../components/CallToAction';
 import { useEffect, useState } from 'react';
 import PostCard from '../components/PostCard';
+import blogpic from '../../images/blogpic.png';
 
 export default function Home() {
   const [posts, setPosts] = useState([]);
@@ -15,13 +15,14 @@ export default function Home() {
     fetchPosts();
   }, []);
   return (
-    <div>
-      <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto '>
-        <h1 className='text-3xl font-bold lg:text-6xl'>Welcome to my Blog</h1>
-        <p className='text-gray-500 text-xs sm:text-sm'>
-          Here you'll find a variety of articles and tutorials on topics such as
-          web development, software engineering, and programming languages.
+    <div className='min-h-[90vh] flex px-[6vw] justify-center items-center max-lg:flex-col-reverse'>
+
+      <div className='flex flex-col gap-6 max-w-6xl mx-auto lg:-mr-8'>
+        <h1 className='text-3xl font-bold lg:text-5xl xl:text-6xl 2xl:text-[4.4rem]'>Welcome to my Blog</h1>
+        <p className='text-gray-500 text-xs sm:text-sm lg:pr-2'>
+        Discover a wealth of articles on travel, nature, recipes, art, DIY, and more! Dive into our community of exploration and inspiration. Join us in uncovering the wonders of the world, one article at a time.
         </p>
+        
         <Link
           to='/search'
           className='text-xs sm:text-sm text-teal-500 font-bold hover:underline'
@@ -29,11 +30,12 @@ export default function Home() {
           View all posts
         </Link>
       </div>
-      <div className='p-3 bg-amber-100 dark:bg-slate-700'>
-        <CallToAction />
-      </div>
 
-      <div className='max-w-6xl mx-auto p-3 flex flex-col gap-8 py-7'>
+       <div className=" xl:w-[950px] lg:w-[750px] 2xl:w-[1150px] md:w-[700px]  max-md:w-auto">
+        <img src={blogpic} alt="" />
+       </div>
+
+      {/* <div className='max-w-6xl mx-auto p-3 flex flex-col gap-8 py-7'>
         {posts && posts.length > 0 && (
           <div className='flex flex-col gap-6'>
             <h2 className='text-2xl font-semibold text-center'>Recent Posts</h2>
@@ -50,7 +52,8 @@ export default function Home() {
             </Link>
           </div>
         )}
-      </div>
+      </div> */}
+
     </div>
   );
 }
