@@ -17,21 +17,21 @@ export default function Home() {
   return (
     <div className='min-h-[90vh] flex px-[6vw] justify-center items-center max-lg:flex-col-reverse'>
 
-      <div className='flex flex-col gap-6 max-w-6xl mx-auto lg:-mr-8'>
-        <h1 className='text-3xl font-bold lg:text-5xl xl:text-6xl 2xl:text-[4.4rem]'>Welcome to my Blog</h1>
-        <p className='text-gray-500 text-xs sm:text-sm lg:pr-2'>
+      <div className='flex flex-col gap-6 max-w-6xl mx-auto lg:-mr-8 max-lg:-mt-[8vh]'>
+        <h1 className='text-2xl sm:text-3xl md:text-4xl ld lg:text-5xl xl:text-6xl 2xl:text-[4.4rem] max-lg:text-center'>Welcome to my Blog</h1>
+        <p className='text-gray-500 text-xs max-sm:text-lg sm:text-xl md:text-2xl lg:text-sm lg:pr-2 max-lg:text-center max-md:-mt-[2vh] max-lg:px-2'>
         Discover a wealth of articles on travel, nature, recipes, art, DIY, and more! Dive into our community of exploration and inspiration. Join us in uncovering the wonders of the world, one article at a time.
         </p>
         
         <Link
           to='/search'
-          className='text-xs sm:text-sm text-teal-500 font-bold hover:underline'
+          className='max-lg:-mt-[2vh] text-xs sm:text-sm text-teal-500 font-bold hover:underline max-lg:text-center'
         >
           View all posts
         </Link>
       </div>
 
-       <div className=" xl:w-[950px] lg:w-[750px] 2xl:w-[1150px] md:w-[700px]  max-md:w-auto">
+       <div className=" xl:w-[950px] lg:w-[750px] 2xl:w-[1050px] md:w-[600px] max-lg:-mt-[8vh]">
         <img src={blogpic} alt="" />
        </div>
 

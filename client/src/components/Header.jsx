@@ -121,10 +121,10 @@ export default function Header() {
       </div>
       <Navbar.Collapse>
         <Navbar.Link className={`font-bold text-xl ${path === '/' ? `${design}` : ''}`}>
-          <Link to='/'>Home</Link>
+          <Link to='/' className='hover:text-red-400'>Home</Link>
         </Navbar.Link>
         <Navbar.Link className={`font-bold text-xl ${path === '/about' ?  `${design}`: ''}`}>
-          <Link to='/about'>About</Link>
+          <Link to='/about' className='hover:text-red-400'>About</Link>
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
