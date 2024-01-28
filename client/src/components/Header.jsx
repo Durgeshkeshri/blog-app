@@ -1,4 +1,4 @@
-import { Avatar, Button, Dropdown, Navbar, TextInput } from 'flowbite-react';
+import { Avatar, Button, Dropdown, Navbar, NavbarCollapse, TextInput } from 'flowbite-react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { FaMoon, FaSun } from 'react-icons/fa';
@@ -9,7 +9,6 @@ import { useEffect, useState } from 'react';
 
 export default function Header() {
   const design = `text-transparent bg-clip-text bg-gradient-to-r from-[gold] via-[red] to-[maroon] rounded-lg dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[gold] dark:via-[red] dark:to-[maroon]`;
-  const hoverEffect =`hover:bg-gradient-to-r from-[gold] via-[red] to-[maroon]`;
   const path = useLocation().pathname;
   const location = useLocation();
   const navigate = useNavigate();
@@ -17,6 +16,7 @@ export default function Header() {
   const { currentUser } = useSelector((state) => state.user);
   const { theme } = useSelector((state) => state.theme);
   const [searchTerm, setSearchTerm] = useState('');
+
 
   useEffect(() => {
     const urlParams = new URLSearchParams(location.search);
@@ -124,7 +124,7 @@ export default function Header() {
           <Link to='/' className='hover:text-red-400'>Home</Link>
         </Navbar.Link>
         <Navbar.Link className={`font-bold text-xl ${path === '/about' ?  `${design}`: ''}`}>
-          <Link to='/about' className='hover:text-red-400'>About</Link>
+          <Link  to='/about' className='hover:text-red-400'>About</Link>
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
