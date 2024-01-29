@@ -7,6 +7,7 @@ export default function FooterCom() {
         <div className='w-full flex items-center justify-between'>
           <Footer.Copyright
             href='#'
+            className='text-gray-500 font-medium'
             by="Nisha Prajapati"
             year={new Date().getFullYear()}
           />
