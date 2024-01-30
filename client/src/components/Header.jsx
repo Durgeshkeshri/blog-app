@@ -53,10 +53,10 @@ export default function Header() {
     <Navbar className='border-b-2 lg:px-[5vw] dark:bg-slate-950 py-4'>
       <Link
         to='/'
-        className='self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white'
+        className='self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white '
       >
-        <span className='font-bold text-2xl max-sm:text-base font-serif backdrop:px-2 py-1 text-transparent bg-clip-text bg-gradient-to-r from-[gold] via-[red] to-[crimson] rounded-lg'>
-          Nisha Prajapati
+        <span className=' text-transparent bg-clip-text font-bold text-2xl lg:text-3xl max-sm:text-base font-serif px-2 py-1  bg-gradient-to-r from-[gold] via-[red] to-[crimson] rounded-lg'>
+          Nisha Prajapati 
         </span>
       </Link>
       <form onSubmit={handleSubmit}>
@@ -104,7 +104,7 @@ export default function Header() {
           </Dropdown>
         ) : (
           <Link to='/sign-in'>
-            <Button gradientDuoTone='purpleToBlue' outline>
+            <Button gradientDuoTone='pinkToOrange' outline>
               Sign In
             </Button>
           </Link>

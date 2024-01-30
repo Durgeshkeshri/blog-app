@@ -12,8 +12,8 @@ export default function FooterCom() {
             year={new Date().getFullYear()}
           />
           <div className="flex gap-6 sm:mt-0 mt-4 sm:justify-center">
-            <Footer.Icon href='#' icon={BsYoutube} className='text-red-600'/>
-            <Footer.Icon href='#' icon={BsInstagram} className='text-pink-700'/>
+            <Footer.Icon href='https://youtube.com/@Thechilldiaries?si=Iohsf-suEn1PAViQ' icon={BsYoutube} className='text-red-600'/>
+            <Footer.Icon href='https://www.instagram.com/thechilldiaries?igsh=MzRlODBiNWFlZA==' icon={BsInstagram} className='text-pink-700'/>
           </div>
         </div>
       </div>
