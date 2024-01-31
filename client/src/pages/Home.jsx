@@ -16,7 +16,7 @@ export default function Home() {
   }, []);
   return (
     <>
-      <div className='lg:min-h-[90vh] min-h-[92vh] flex px-[6vw] max-md:gap-3 max-lg:gap-4 justify-center items-center max-lg:flex-col-reverse'>
+      <div className='lg:min-h-[90vh] min-h-[85vh] flex px-[6vw] max-md:gap-3 max-lg:gap-4 justify-center items-center max-lg:flex-col-reverse'>
 
         <div className='flex flex-col lg:gap-6 md:gap-6 max-md:gap-3 max-w-6xl mx-auto'>
           <h1 className='text-3xl sm:text-4xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-[4.4rem] max-lg:text-center'>Welcome to my Blog</h1>
