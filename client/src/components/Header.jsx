@@ -15,7 +15,7 @@ export default function Header() {
   const { currentUser } = useSelector((state) => state.user);
   const { theme } = useSelector((state) => state.theme);
   const [searchTerm, setSearchTerm] = useState('');
-  const design = `text-transparent bg-clip-text bg-gradient-to-r from-[gold] via-[red] to-[maroon] rounded-lg dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[gold] dark:via-[red] dark:to-[maroon]`;
+  const design = `text-transparent bg-clip-text bg-gradient-to-r from-[gold] via-[red] to-[crimson] rounded-lg dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[gold] dark:via-[red] dark:to-[crimson]`;
 
   useEffect(() => {
     const urlParams = new URLSearchParams(location.search);
