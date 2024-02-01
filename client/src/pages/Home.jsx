@@ -26,7 +26,7 @@ export default function Home() {
 
           <Link
             to='/search'
-            className='text-xs sm:text-sm text-teal-500 font-bold hover:underline max-lg:text-center'
+            className='text-xs sm:text-sm text-red-500 font-bold hover:underline max-lg:text-center'
           >
             View all posts
           </Link>
@@ -48,7 +48,7 @@ export default function Home() {
             </div>
             <Link
               to={'/search'}
-              className='text-lg text-teal-500 hover:underline text-center'
+              className='text-lg text-red-500 hover:underline text-center'
             >
               View all posts
             </Link>

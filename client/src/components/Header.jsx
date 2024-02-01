@@ -73,14 +73,14 @@ export default function Header() {
         <AiOutlineSearch />
       </Button>
       <div className='flex gap-2 md:order-2'>
-        <Button
+        {/* <Button
           className='w-12 h-10 hidden sm:inline'
           color='gray'
           pill
           onClick={() => dispatch(toggleTheme())}
         >
           {theme === 'light' ? <FaSun /> : <FaMoon />}
-        </Button>
+        </Button> */}
         {currentUser ? (
           <Dropdown
             arrowIcon={false}
@@ -113,10 +113,10 @@ export default function Header() {
       </div>
       <Navbar.Collapse>
         <Navbar.Link className={`font-bold text-2xl font-sans ${path === '/' ? `${design}` : ''}`}>
-          <Link onClick={()=>Collapse.Toggle()} to='/' className='hover:text-[gold]'>Home</Link>
+          <Link onClick={()=>Collapse.Toggle()} to='/' className='hover:text-[gold] hover:bg-transparent'>Home</Link>
         </Navbar.Link>
         <Navbar.Link className={`font-bold text-2xl font-sans ${path === '/about' ?  `${design}`: ''}`}>
-          <Link onClick={()=>Collapse.Toggle()} to='/about' className='hover:text-[gold]'>About</Link>
+          <Link onClick={()=>Collapse.Toggle()} to='/about' className='hover:text-[gold] hover:bg-transparent'>About</Link>
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>

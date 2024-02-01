@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function PostCard({ post }) {
   return (
-    <div className='w-full border border-teal-500 hover:border-2 h-[350px] rounded-lg sm:w-[430px] lg:w-[360px] max-sm:w-[320px]'>
+    <div className='w-full border border-red-500 hover:border-2 h-[350px] rounded-lg sm:w-[430px] lg:w-[360px] max-sm:w-[320px]'>
       <Link to={`/post/${post.slug}`}>
         <img
           src={post.image}
@@ -15,7 +15,7 @@ export default function PostCard({ post }) {
         <span className=' text-sm'>{post.category}</span>
         <Link
           to={`/post/${post.slug}`}
-          className='z-10 border border-teal-500 text-teal-500 hover:bg-teal-500 hover:text-white text-center py-2 rounded-md m-2'
+          className='z-10 border border-red-500 text-red-500 hover:bg-red-500 hover:text-white text-center py-2 rounded-md m-2'
         >
           Read article
         </Link>
